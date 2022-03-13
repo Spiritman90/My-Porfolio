@@ -1,0 +1,28 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #59b256;
+  justify-content: space-around;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0.3rem;
+  /* border-bottom: 2px solid rgba(235, 226, 226, 0.1); */
+  color: white;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.navbar-nav .nav-list {
+  list-style: none;
+  display: flex;
+}
+
+.nav-list .nav-item {
+  margin-right: 1.5rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.nav-list .nav-item:hover {
+  border-bottom: 2px solid greenyellow;
+}
