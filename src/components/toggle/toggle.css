@@ -26,3 +26,9 @@
   position: absolute;
   cursor: pointer;
 }
+
+@media screen and (max-width: 680px) {
+  .t {
+    display: none;
+  }
+}

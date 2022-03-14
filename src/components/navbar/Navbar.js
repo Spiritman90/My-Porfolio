@@ -15,8 +15,7 @@ const Navbar = () => {
         <Link to='intro'>
           <h2 style={{ color: darkMode && "white", fontFamily: "" }}>
             {" "}
-            <Logo />
-            phemmy_dev.
+            <Logo className='logo' /> phemmy_dev.
           </h2>
         </Link>
       </div>
