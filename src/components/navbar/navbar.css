@@ -6,7 +6,7 @@
   position: sticky;
   top: 0;
   z-index: 10;
-  padding: 0.3rem;
+  padding: 0.5rem;
   /* border-bottom: 2px solid rgba(235, 226, 226, 0.1); */
   color: white;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
@@ -17,6 +17,10 @@
   display: flex;
 }
 
+.logo-box h2 {
+  display: flex;
+  gap: 0.5rem;
+}
 .nav-list .nav-item {
   margin-right: 1.5rem;
   font-weight: bold;

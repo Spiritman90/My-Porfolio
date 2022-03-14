@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <div className='navbar'>
       <div className='logo-box'>
-        <Link to='intro'>
+        <Link to='intro' className='link'>
           <h2 style={{ color: darkMode && "white", fontFamily: "" }}>
             {" "}
             <Logo className='logo' /> phemmy_dev.
