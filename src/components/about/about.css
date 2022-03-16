@@ -125,6 +125,18 @@ hr {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .a-right {
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5rem;
+  }
+
+  hr {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .i {
     flex-direction: column;

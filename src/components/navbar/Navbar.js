@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
-
+      {/* submenu nav */}
       <div className={menu ? "submenu" : "hidden"}>
         <Link
           to='about'

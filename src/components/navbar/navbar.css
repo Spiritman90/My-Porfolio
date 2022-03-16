@@ -63,6 +63,27 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .logo-box .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .navbar {
+    justify-content: space-between;
+    margin-bottom: 3rem;
+  }
+  .submenu {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 480px) and (max-width: 680px) {
   .navbar-nav {
     display: none;

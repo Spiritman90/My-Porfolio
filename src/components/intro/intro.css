@@ -116,6 +116,21 @@
   }
 }
 
+@media screen and (max-width: 400px) {
+  .i-bg {
+    height: 20rem;
+  }
+
+  .i-right {
+    margin-bottom: -10rem;
+  }
+
+  h1.i-name {
+    font-size: 40px;
+    margin-bottom: 3rem;
+  }
+}
+
 @media screen and (max-width: 680px) {
   .i-desc {
     margin-top: 2rem;
