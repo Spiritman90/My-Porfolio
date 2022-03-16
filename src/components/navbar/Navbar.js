@@ -1,13 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { useContext } from "react";
 import { ThemeContext } from "../../context";
 import "./navbar.css";
 import Logo from "../customIcons/Logo";
+import { BiMenu } from "react-icons/bi";
 
 const Navbar = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
+  const [menu, setMenu] = useState(true);
 
   return (
     <div className='navbar'>
@@ -57,6 +59,46 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+
+      <div className={menu ? "submenu" : "hidden"}>
+        <Link
+          to='about'
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          className='submenu-links'
+          onClick={() => setMenu(false)}
+        >
+          About
+        </Link>
+
+        <Link
+          to='projectList'
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          className='submenu-links'
+          onClick={() => setMenu(false)}
+        >
+          Projects
+        </Link>
+        <Link
+          to='contact'
+          spy={true}
+          smooth={true}
+          offset={50}
+          duration={1000}
+          className='submenu-links'
+          onClick={() => setMenu(false)}
+        >
+          Contact
+        </Link>
+      </div>
+      <span className='hamburger' onClick={() => setMenu(!menu)}>
+        <BiMenu />
+      </span>
     </div>
   );
 };
