@@ -19,6 +19,13 @@
 .p-wrapper {
   width: 30%;
   padding: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  gap: 2rem;
+  border-radius: 5px;
+}
+
+.p-wrapper:hover {
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.2);
 }
 
 .description {
@@ -39,7 +46,7 @@
 
 .p-img {
   width: 100%;
-  transition: all 8s ease;
+  transition: all 4s ease;
 }
 
 .p:hover .p-img {

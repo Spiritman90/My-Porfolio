@@ -38,7 +38,6 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-    console.log(formRef);
   };
 
   useEffect(() => {
@@ -76,8 +75,8 @@ const Contact = () => {
         </div>
         <div className='c-right'>
           <p className='c-desc'>
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along.
+            <b></b> Get in touch. Always available for freelancing if the right
+            project comes along.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
@@ -123,7 +122,7 @@ const Contact = () => {
                 setformData((prev) => ({ ...prev, message: e.target.value }))
               }
             />
-            <button>SHOOT </button>
+            <button>SEND </button>
             {done && renderAlert()}
           </form>
         </div>
