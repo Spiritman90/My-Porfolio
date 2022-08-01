@@ -31,9 +31,10 @@
 .description {
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.0175em;
+  color: grey;
 }
 
 .p-circle {
