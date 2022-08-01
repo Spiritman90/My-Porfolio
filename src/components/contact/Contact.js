@@ -2,6 +2,8 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
+import linkedin from "../../img/linkedin.jpeg";
+import twitter from "../../img/twitter.webp";
 import { useContext, useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 import { ThemeContext } from "../../context";
@@ -60,11 +62,68 @@ const Contact = () => {
           <div className='c-info'>
             <div className='c-info-item'>
               <img src={Phone} alt='' className='c-icon' />
-              +234 8069304835
+              <a
+                href='tel:+23469304835'
+                target='_blank'
+                rel='noreferrer'
+                className='contact-link'
+                style={{
+                  textDecoration: "none",
+                  color: darkMode ? "#fff" : "black",
+                }}
+              >
+                Call
+              </a>
+            </div>
+            <div className='c-info-item '>
+              <img className='c-icon' src={Email} alt='email' />
+
+              <a
+                href='mailto:phemmyadey@gmail.com'
+                target='_blank'
+                rel='noreferrer'
+                className='contact-link'
+                style={{
+                  textDecoration: "none",
+                  color: darkMode ? "#fff" : "black",
+                }}
+              >
+                Send a mail
+              </a>
             </div>
             <div className='c-info-item'>
-              <img className='c-icon' src={Email} alt='' />
-              phemmyadey@gmail.com
+              <img className='c-icon' src={linkedin} alt='email' />
+              <p>
+                <a
+                  href='https://www.linkedin.com/in/adewole-oluwafemi-1313a622b/'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='contact-link'
+                  style={{
+                    textDecoration: "none",
+                    color: darkMode ? "#fff" : "black",
+                  }}
+                >
+                  LinkedIn
+                </a>
+              </p>
+            </div>
+            <div className='c-info-item'>
+              <img className='c-icon' src={twitter} alt='email' />
+              <p>
+                <a
+                  href='https://twitter.com/phemmypete'
+                  target='_blank'
+                  rel='noreferrer'
+                  className='contact-link'
+                  style={{
+                    textDecoration: "none",
+                    color: darkMode ? "#fff" : "black",
+                  }}
+                >
+                  Twitter
+                </a>
+              </p>
             </div>
 
             <div className='c-info-item'>
@@ -75,15 +134,20 @@ const Contact = () => {
         </div>
         <div className='c-right'>
           <p className='c-desc'>
-            <b></b> Get in touch. Always available for freelancing if the right
-            project comes along.
+            <b>Looking to hire?</b> Kindly get in touch. I am actively searching
+            for a Front-end role.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
-              style={{ backgroundColor: darkMode && "#333", color: "white" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#fff" : "black",
+              }}
               type='text'
               placeholder='Name'
               name='user_name'
+              autoComplete='off'
+              className='contact-input'
               value={formData.name}
               onChange={(e) =>
                 setformData((prev) => ({ ...prev, name: e.target.value }))
@@ -92,31 +156,43 @@ const Contact = () => {
             <input
               style={{
                 backgroundColor: darkMode && "#333",
-                color: "white",
+                color: darkMode ? "#fff" : "black",
               }}
               type='text'
               placeholder='Subject'
               name='user_subject'
+              autoComplete='off'
+              className='contact-input'
               value={formData.subject}
               onChange={(e) =>
                 setformData((prev) => ({ ...prev, subject: e.target.value }))
               }
             />
             <input
-              style={{ backgroundColor: darkMode && "#333", color: "white" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#fff" : "black",
+              }}
               type='email'
               placeholder='Email'
               name='user_email'
+              autoComplete='off'
+              className='contact-input'
               value={formData.email}
               onChange={(e) =>
                 setformData((prev) => ({ ...prev, email: e.target.value }))
               }
             />
             <textarea
-              style={{ backgroundColor: darkMode && "#333", color: "white" }}
+              style={{
+                backgroundColor: darkMode && "#333",
+                color: darkMode ? "#fff" : "black",
+              }}
               rows='5'
               placeholder='Message'
               name='message'
+              autoComplete='off'
+              className='contact-input'
               value={formData.message}
               onChange={(e) =>
                 setformData((prev) => ({ ...prev, message: e.target.value }))
