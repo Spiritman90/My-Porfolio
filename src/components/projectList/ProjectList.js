@@ -10,7 +10,10 @@ const ProjectList = () => {
           {" "}
           My Projects <span className='line'></span>{" "}
         </h1>
-        <p className='pl-desc'>Click the card to have a look at my projects!</p>
+        <p className='pl-desc'>
+          Here are some of the things I have built, click the card to have a
+          look!
+        </p>
       </div>
       <div className='pl-list'>
         {projects.map((item) => (
