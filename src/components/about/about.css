@@ -100,6 +100,47 @@ hr {
   margin-bottom: 0.6875rem;
 }
 
+@media screen and (max-width: 950px) {
+  .a {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .a-card {
+    width: 80%;
+    min-height: 90%;
+    margin-top: 5rem;
+  }
+
+  .a-card.bg,
+  .a-award {
+    display: none;
+  }
+
+  .a-right {
+    flex: 0;
+    margin: 0;
+    padding: 1rem 2rem;
+    text-align: center;
+    margin-top: 5rem;
+  }
+
+  hr {
+    width: 10rem;
+    border-top: 0.1875rem solid #59b256;
+    text-align: center;
+    display: inline-block;
+  }
+
+  /* .a-sub {
+    font-size: 1.1rem;
+  }
+
+  .a-desc {
+    font-size: 1.1rem;
+  } */
+}
+
 @media screen and (max-width: 600px) {
   .a {
     flex-direction: column;

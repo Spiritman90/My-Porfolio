@@ -34,21 +34,23 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 600px) {
-  /* .pl {
-    margin-top: -4rem;
-    padding: 1rem 5rem;
-  } */
+@media screen and (max-width: 950px) {
+  .pl-texts {
+    /* width: 100%; */
+    margin-top: 6rem;
+  }
+}
 
+@media screen and (max-width: 600px) {
   .pl-texts {
     width: 100%;
+    margin-top: 5rem;
   }
   .pl-list {
     gap: 1rem;
   }
 
   .pl-desc {
-    /* margin: 0, 2rem; */
     padding: 0 3rem;
   }
 }
