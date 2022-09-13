@@ -9,7 +9,7 @@ import { BiMenu } from "react-icons/bi";
 const Navbar = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   return (
     <div className='navbar'>

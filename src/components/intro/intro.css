@@ -16,7 +16,7 @@
 }
 
 .i-left-wrapper {
-  padding: 50px;
+  padding: 3.125rem;
   height: 50%;
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .i-intro {
-  font-size: 30px;
+  font-size: 1.875rem;
   font-weight: 300;
 }
 
@@ -33,12 +33,12 @@
   font-size: 1rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
-  line-height: 22px;
+  line-height: 1.375rem;
   letter-spacing: 0.0175em;
 }
 
 .i-name {
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .i-title {
@@ -52,7 +52,7 @@
 
 @keyframes move {
   25% {
-    transform: translateY(-50px);
+    transform: translateY(-3.125rem);
   }
   50% {
     transform: translateY(-100px);
@@ -66,8 +66,8 @@
 }
 
 .i-title-item {
-  height: 50px;
-  font-size: 30px;
+  height: 3.125rem;
+  font-size: 1.875rem;
   font-weight: 800;
   color: #59b256;
   display: flex;
@@ -75,10 +75,10 @@
 }
 
 .i-scroll {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
   position: absolute;
-  bottom: 20px;
+  bottom: 1.25rem;
 }
 /* 
 .i-img {
@@ -104,7 +104,7 @@
   }
 
   .i-left-wrapper {
-    padding: 10px;
+    padding: 0.625rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -126,7 +126,7 @@
   }
 
   h1.i-name {
-    font-size: 40px;
+    font-size: 2.5rem;
     margin-bottom: 3rem;
   }
 }
@@ -136,6 +136,6 @@
     margin-top: 2rem;
   }
   .i-name {
-    font-size: 50px;
+    font-size: 3.125rem;
   }
 }

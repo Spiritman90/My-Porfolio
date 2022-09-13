@@ -20,15 +20,15 @@
 
 .a-card.bg {
   position: absolute;
-  top: 50px;
-  left: 50px;
+  top: 3.125rem;
+  left: 3.125rem;
   background-color: #333;
 }
 
 .a-card {
   width: 55%;
   height: 70vh;
-  border-radius: 30px;
+  border-radius: 1.875rem;
   position: relative;
   overflow: hidden;
 }
@@ -67,7 +67,7 @@
 }
 hr {
   width: 10rem;
-  border-top: 3px solid #59b256;
+  border-top: 0.1875rem solid #59b256;
 }
 
 .underline {
@@ -76,7 +76,7 @@ hr {
 }
 
 .a-sub {
-  margin: 20px 0px;
+  margin: 1.25rem 0;
 }
 
 .a-desc {
@@ -84,7 +84,7 @@ hr {
 }
 
 .a-award {
-  margin-top: 50px;
+  margin-top: 3.125rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -97,14 +97,14 @@ hr {
 .a-award-title {
   font-weight: 600;
   color: #555;
-  margin-bottom: 11px;
+  margin-bottom: 0.6875rem;
 }
 
 @media screen and (max-width: 480px) {
   .a {
     flex-direction: column;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 3.125rem;
   }
 
   .a-left {
@@ -121,7 +121,7 @@ hr {
   }
 
   .a-right {
-    padding: 20px;
+    padding: 1.25rem;
   }
 }
 
