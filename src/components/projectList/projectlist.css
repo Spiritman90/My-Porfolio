@@ -46,6 +46,11 @@
   .pl-list {
     gap: 1rem;
   }
+
+  .pl-desc {
+    /* margin: 0, 2rem; */
+    padding: 0 2rem;
+  }
 }
 
 @media screen and (max-width: 400px) {
