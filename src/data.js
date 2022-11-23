@@ -32,7 +32,7 @@ export const projects = [
     img: "/images/advise-generator.png",
     link: "https://advice-generator-zl7r.vercel.app/",
     description:
-      "An advise generating App with Techologies used are React, RTK QUery and TailwindCSS",
+      "An advise generating App. Techologies used are React, RTK QUery and TailwindCSS",
   },
   {
     id: 6,
