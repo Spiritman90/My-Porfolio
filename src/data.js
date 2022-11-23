@@ -14,7 +14,7 @@ export const projects = [
       "GalleryOne is a web app that brings buyers and sellers together. Only users that have signed up or registered on the platform are allowed to bid, buy or sell. User authentication is put in place to register users before onboarding them on the platform. Built with React, SCSS and Redux Toolkit",
   },
   {
-    id: 5,
+    id: 3,
     img: "/images/traveler.png",
     link: "https://fervent-montalcini-58eadd.netlify.app/",
     description:
@@ -22,12 +22,20 @@ export const projects = [
   },
   {
     id: 4,
-    img: "/images/counter.png",
-    link: "https://admiring-euclid-5c169f.netlify.app/",
-    description: "A maiden React Application: Simple Counter App",
+    img: "/images/task-manager.png",
+    link: "https://astounding-gingersnap-066e9d.netlify.app/",
+    description:
+      "A mini task management App, created with React, TypeScript and CSS",
   },
   {
-    id: 3,
+    id: 5,
+    img: "/images/advise-generator.png",
+    link: "https://advice-generator-zl7r.vercel.app/",
+    description:
+      "An advise generating App with Techologies used are React, RTK QUery and TailwindCSS",
+  },
+  {
+    id: 6,
     img: "/images/edge.png",
     link: "https://spiritman90.github.io/multi-section-landing-page/",
     description:
